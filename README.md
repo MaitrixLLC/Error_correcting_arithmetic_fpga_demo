@@ -11,7 +11,7 @@ the error correction unit is fully pipelined; all arithmetic circuits are pipeli
 The ability to perform error detection and correction of arithmetic depends on the 
 number system having some redundancy.  Thus, a redundant RNS number system is used
 to perform the calculations; the values are converted to RNS for processing, and are converted
-back to binary before they are displayed in either decimnal or hexadecimal format.
+back to binary before they are displayed in either decimal or hexadecimal format.
 This type of computation is new.  It represents a new field called "Modular Computation".
 Modular Computation has many benefits.  This demonstration shows how much the modular
 circuits may be over-clocked.  Moreover, errors are corrected or detected.
