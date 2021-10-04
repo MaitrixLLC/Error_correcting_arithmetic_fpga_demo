@@ -3,7 +3,7 @@ FPGA demonstration of an over-clocked product summation pipeline with arithmetic
 This is an FPGA project running a NIOS-II processor.
 The FPGA portion also includes a high-speed arithmetic processing pipeline.
 The pipeline multiplies two values and adds the resulting product to a summation.
-It performs 16 product separate summations, each summation comprising 16 products.
+It performs 16 separate product summations, each summation comprising 16 products.
 By increasing the clock frequency of the arithmetic pipeline, arithmetic errors are induced.
 These arithmetic errors may also be induced by cosmic rays or other high-energy particles.
 Any single digit errors in the product summation are detected and corrected in hardware;
