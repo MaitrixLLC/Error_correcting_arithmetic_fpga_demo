@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Sat Jun 15 23:07:41 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : bts_ddr3_x32
+Top-level Entity Name : bts_ddr3_x32
+Family : Arria V
+Logic utilization (in ALMs) : 23,181 / 136,880 ( 17 % )
+Total registers : 30573
+Total pins : 80 / 656 ( 12 % )
+Total virtual pins : 0
+Total block memory bits : 1,820,296 / 17,674,240 ( 10 % )
+Total DSP Blocks : 7 / 1,045 ( < 1 % )
+Total HSSI RX PCSs : 0 / 24 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 24 ( 0 % )
+Total HSSI TX PCSs : 0 / 24 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 24 ( 0 % )
+Total PLLs : 2 / 36 ( 6 % )
+Total DLLs : 1 / 4 ( 25 % )

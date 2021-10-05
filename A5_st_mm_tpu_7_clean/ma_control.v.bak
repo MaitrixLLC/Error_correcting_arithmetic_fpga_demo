@@ -1,0 +1,58 @@
+// product accumulator with error correction demo circuit controller
+//
+
+module ma_control (
+
+	s_clk,
+	f_clk,
+	start,
+	num_prods,
+	num_batches,
+	
+
+	data_lut_adr,
+	trunc_ena,
+	clear_ena,
+	datavalid_in,
+	
+	data_in_rd_req,
+	data_in_async_clr,
+	
+	data_out_rd_req,
+	data_out_async_clr,
+	
+	done
+
+);
+
+
+
+input s_clk;				// slow clock input
+input f_clk;				// fast clock input
+
+input start;				// start pulse to start the product summation with respect to s_clk
+input num_prods;			// input to specify the number of products to sum
+input num_batches;		// input to specify the number of batches to process
+
+output [9:0] data_lut_adr;		// LUT address control
+output trunc_ena;					// accumulator truncation control
+output clear_ena;					// accumulator clear control
+output datavalid_in;				// forward converter datavalid in control signal
+
+output data_in_rd_req;		// input data fifo output enable control signal (reads the input fifo's to the MAC unit)
+output data_in_async_clr;	// clears the input fifo's
+
+output data_out_rd_req;			// reads the output data from the output fifo's
+output data_out_async_clr;		// clears the output data fifo
+
+output done;					// done signal with reference to s_clk
+
+
+
+
+
+
+
+
+
+endmodule

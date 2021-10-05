@@ -1,0 +1,48 @@
+// test circuit to implement two clock sync circuit
+
+
+module twoclksync (
+
+	s_clk,
+	f_clk,
+	trig_in,
+	ena_out
+
+
+);
+
+
+
+input s_clk;
+input f_clk;
+input trig_in;
+
+output ena_out;
+
+reg trig_in_ff;
+reg ena_out_ff;
+
+
+wire async_rst;
+
+
+always @(posedge s_clk or posedge async_rst)
+begin
+
+	if(async_rst == 1'b1) begin
+
+
+	end 
+	else if(s_clk == 1'b1) begin
+	
+	
+	end
+
+
+end
+
+
+
+
+
+endmodule

@@ -1,0 +1,80 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 424 176)
+	(text "adder_xy_2in_2out" (rect 5 0 98 12)(font "Arial" ))
+	(text "inst" (rect 8 96 25 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "in_a[DATA_A_WIDTH-1..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "in_a[DATA_A_WIDTH-1..0]" (rect 21 43 154 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "in_b[DATA_B_WIDTH-1..0]" (rect 0 0 133 12)(font "Arial" ))
+		(text "in_b[DATA_B_WIDTH-1..0]" (rect 21 59 154 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 360 32)
+		(output)
+		(text "low_sum[DATA_LO_WIDTH-1..0]" (rect -72 0 90 12)(font "Arial" ))
+		(text "low_sum[DATA_LO_WIDTH-1..0]" (rect 202 27 364 39)(font "Arial" ))
+		(line (pt 360 32)(pt 344 32)(line_width 3))
+	)
+	(port
+		(pt 360 48)
+		(output)
+		(text "hi_sum[DATA_B_WIDTH-1..DATA_LO_WIDTH]" (rect -72 0 161 12)(font "Arial" ))
+		(text "hi_sum[DATA_B_WIDTH-1..DATA_LO_WIDTH]" (rect 142 43 375 55)(font "Arial" ))
+		(line (pt 360 48)(pt 344 48)(line_width 3))
+	)
+	(parameter
+		"DATA_A_WIDTH"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"DATA_B_WIDTH"
+		"34"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"DATA_LO_WIDTH"
+		"16"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 344 96))
+	)
+	(annotation_block (parameter)(rect 432 -16 640 64))
+)

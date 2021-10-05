@@ -1,0 +1,174 @@
+Flow report for bts_ddr3_x32
+Sun Sep 19 09:10:33 2021
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Flow Summary                                                                      ;
++---------------------------------+-------------------------------------------------+
+; Flow Status                     ; Successful - Sun Sep 19 09:10:33 2021           ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                   ; bts_ddr3_x32                                    ;
+; Top-level Entity Name           ; Nios_ddr3_ver1                                  ;
+; Family                          ; Arria V                                         ;
+; Device                          ; 5AGXFB3H4F35C5                                  ;
+; Timing Models                   ; Final                                           ;
+; Logic utilization (in ALMs)     ; 40,566 / 136,880 ( 30 % )                       ;
+; Total registers                 ; 96612                                           ;
+; Total pins                      ; 16 / 656 ( 2 % )                                ;
+; Total virtual pins              ; 0                                               ;
+; Total block memory bits         ; 2,065,584 / 17,674,240 ( 12 % )                 ;
+; Total DSP Blocks                ; 24 / 1,045 ( 2 % )                              ;
+; Total HSSI RX PCSs              ; 0 / 24 ( 0 % )                                  ;
+; Total HSSI PMA RX Deserializers ; 0 / 24 ( 0 % )                                  ;
+; Total HSSI TX PCSs              ; 0 / 24 ( 0 % )                                  ;
+; Total HSSI PMA TX Serializers   ; 0 / 24 ( 0 % )                                  ;
+; Total PLLs                      ; 3 / 36 ( 8 % )                                  ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                                   ;
++---------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/19/2021 08:48:12 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; bts_ddr3_x32        ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                      ;
++--------------------------------------+----------------------------------------------------------------+---------------+----------------+------------------------------+
+; Assignment Name                      ; Value                                                          ; Default Value ; Entity Name    ; Section Id                   ;
++--------------------------------------+----------------------------------------------------------------+---------------+----------------+------------------------------+
+; COMPILER_SIGNATURE_ID                ; 84440849011944.163206649112356                                 ; --            ; --             ; --                           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                                             ; --            ; --             ; tb_ec_correct_pipe18x10_dval ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_ec_correct_pipe18x10_dval                                   ; --            ; --             ; eda_simulation               ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                                    ; --            ; --             ; eda_simulation               ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)                                      ; <None>        ; --             ; --                           ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                                                ; --            ; --             ; eda_simulation               ;
+; EDA_TEST_BENCH_FILE                  ; simulation/tb_ec_correct_pipe18x10_dval.sv                     ; --            ; --             ; tb_ec_correct_pipe18x10_dval ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_ec_correct_pipe18x10_dval                                   ; --            ; --             ; tb_ec_correct_pipe18x10_dval ;
+; EDA_TEST_BENCH_NAME                  ; tb_ec_correct_pipe18x10_dval                                   ; --            ; --             ; eda_simulation               ;
+; EDA_TIME_SCALE                       ; 1 ps                                                           ; --            ; --             ; eda_simulation               ;
+; FITTER_EFFORT                        ; Standard Fit                                                   ; Auto Fit      ; --             ; --                           ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                             ; --            ; --             ; --                           ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                              ; --            ; --             ; --                           ;
+; MISC_FILE                            ; fifo20_2c.bsf                                                  ; --            ; --             ; --                           ;
+; MISC_FILE                            ; fifo20_2c_bb.v                                                 ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Clk_Cntrl_x4/synthesis/../Clk_Cntrl_x4.cmp                     ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Clk_Cntrl_x4/synthesis/../../Clk_Cntrl_x4.qsys                 ; --            ; --             ; --                           ;
+; MISC_FILE                            ; pll_5_to_300.cmp                                               ; --            ; --             ; --                           ;
+; MISC_FILE                            ; q_sys/synthesis/../q_sys.cmp                                   ; --            ; --             ; --                           ;
+; MISC_FILE                            ; q_sys/synthesis/../../q_sys.qsys                               ; --            ; --             ; --                           ;
+; MISC_FILE                            ; lpm_mult18_fabric.bsf                                          ; --            ; --             ; --                           ;
+; MISC_FILE                            ; lpm_mult18_fabric_bb.v                                         ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Ram2port_64_32_512.bsf                                         ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Ram2port_64_32_512_bb.v                                        ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Ram2port_64_32_2048.bsf                                        ; --            ; --             ; --                           ;
+; MISC_FILE                            ; Ram2port_64_32_2048_bb.v                                       ; --            ; --             ; --                           ;
+; MISC_FILE                            ; pll_50_to_375B.cmp                                             ; --            ; --             ; --                           ;
+; MISC_FILE                            ; pll_50_to_375B_sim/pll_50_to_375B.vo                           ; --            ; --             ; --                           ;
+; OPTIMIZATION_MODE                    ; High Performance Effort                                        ; Balanced      ; --             ; --                           ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                         ; --            ; Nios_ddr3_ver1 ; Top                          ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                         ; --            ; Nios_ddr3_ver1 ; Top                          ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                         ; --            ; Nios_ddr3_ver1 ; Top                          ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC       ; On                                                             ; Off           ; --             ; --                           ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING ; On                                                             ; Off           ; --             ; --                           ;
+; PLACEMENT_EFFORT_MULTIPLIER          ; 4.0                                                            ; 1.0           ; --             ; --                           ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                            ; --            ; --             ; --                           ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                          ; --            ; --             ; --                           ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL     ; MAXIMUM                                                        ; Normal        ; --             ; --                           ;
+; SEARCH_PATH                          ; pll_50_2_330                                                   ; --            ; --             ; --                           ;
+; SEARCH_PATH                          ; tpu                                                            ; --            ; --             ; --                           ;
+; SLD_FILE                             ; Clk_Cntrl_x4/synthesis/Clk_Cntrl_x4.debuginfo                  ; --            ; --             ; --                           ;
+; SLD_FILE                             ; q_sys/synthesis/q_sys.regmap                                   ; --            ; --             ; --                           ;
+; SLD_FILE                             ; q_sys/synthesis/q_sys.debuginfo                                ; --            ; --             ; --                           ;
+; SLD_INFO                             ; QSYS_NAME Clk_Cntrl_x4 HAS_SOPCINFO 1 GENERATION_ID 1568998419 ; --            ; Clk_Cntrl_x4   ; --                           ;
+; SLD_INFO                             ; QSYS_NAME q_sys HAS_SOPCINFO 1 GENERATION_ID 1573013051        ; --            ; q_sys          ; --                           ;
+; SOPCINFO_FILE                        ; Clk_Cntrl_x4/synthesis/../../Clk_Cntrl_x4.sopcinfo             ; --            ; --             ; --                           ;
+; SOPCINFO_FILE                        ; q_sys/synthesis/../../q_sys.sopcinfo                           ; --            ; --             ; --                           ;
+; SPD_FILE                             ; pll_50_to_375B.spd                                             ; --            ; --             ; --                           ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --             ; --                           ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --             ; --                           ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --             ; --                           ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                             ; --            ; --             ; --                           ;
+; TOP_LEVEL_ENTITY                     ; Nios_ddr3_ver1                                                 ; bts_ddr3_x32  ; --             ; --                           ;
++--------------------------------------+----------------------------------------------------------------+---------------+----------------+------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:03:16     ; 1.3                     ; 6719 MB             ; 00:04:22                           ;
+; Fitter               ; 00:15:49     ; 1.2                     ; 9393 MB             ; 00:35:13                           ;
+; Assembler            ; 00:00:50     ; 1.0                     ; 5693 MB             ; 00:00:48                           ;
+; Timing Analyzer      ; 00:00:56     ; 1.8                     ; 7097 MB             ; 00:01:34                           ;
+; EDA Netlist Writer   ; 00:00:29     ; 1.0                     ; 6278 MB             ; 00:00:29                           ;
+; Total                ; 00:21:20     ; --                      ; --                  ; 00:42:26                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DSR-3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DSR-3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DSR-3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DSR-3            ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DSR-3            ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off bts_ddr3_x32 -c bts_ddr3_x32
+quartus_fit --read_settings_files=off --write_settings_files=off bts_ddr3_x32 -c bts_ddr3_x32
+quartus_asm --read_settings_files=off --write_settings_files=off bts_ddr3_x32 -c bts_ddr3_x32
+quartus_sta bts_ddr3_x32 -c bts_ddr3_x32
+quartus_eda --read_settings_files=off --write_settings_files=off bts_ddr3_x32 -c bts_ddr3_x32
+
+
+

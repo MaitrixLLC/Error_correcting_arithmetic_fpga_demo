@@ -1,0 +1,141 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 320 272)
+	(text "ma_control" (rect 5 0 59 12)(font "Arial" ))
+	(text "inst" (rect 8 192 25 204)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "s_clk" (rect 0 0 25 12)(font "Arial" ))
+		(text "s_clk" (rect 21 27 46 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "f_clk" (rect 0 0 24 12)(font "Arial" ))
+		(text "f_clk" (rect 21 43 45 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "start" (rect 0 0 22 12)(font "Arial" ))
+		(text "start" (rect 21 59 43 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "num_prods[9..0]" (rect 0 0 80 12)(font "Arial" ))
+		(text "num_prods[9..0]" (rect 21 75 101 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "num_batches[9..0]" (rect 0 0 92 12)(font "Arial" ))
+		(text "num_batches[9..0]" (rect 21 91 113 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "aclr" (rect 0 0 17 12)(font "Arial" ))
+		(text "aclr" (rect 21 107 38 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 256 32)
+		(output)
+		(text "data_lut_adr[9..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "data_lut_adr[9..0]" (rect 163 27 235 39)(font "Arial" ))
+		(line (pt 256 32)(pt 240 32)(line_width 3))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "trunc_ena" (rect 0 0 48 12)(font "Arial" ))
+		(text "trunc_ena" (rect 195 43 235 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "clear_ena" (rect 0 0 47 12)(font "Arial" ))
+		(text "clear_ena" (rect 196 59 235 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "datavalid_in" (rect 0 0 59 12)(font "Arial" ))
+		(text "datavalid_in" (rect 186 75 235 87)(font "Arial" ))
+		(line (pt 256 80)(pt 240 80))
+	)
+	(port
+		(pt 256 96)
+		(output)
+		(text "data_in_rd_req" (rect 0 0 71 12)(font "Arial" ))
+		(text "data_in_rd_req" (rect 175 91 235 103)(font "Arial" ))
+		(line (pt 256 96)(pt 240 96))
+	)
+	(port
+		(pt 256 112)
+		(output)
+		(text "data_in_async_clr" (rect 0 0 89 12)(font "Arial" ))
+		(text "data_in_async_clr" (rect 160 107 235 119)(font "Arial" ))
+		(line (pt 256 112)(pt 240 112))
+	)
+	(port
+		(pt 256 128)
+		(output)
+		(text "data_out_rd_req" (rect 0 0 79 12)(font "Arial" ))
+		(text "data_out_rd_req" (rect 169 123 235 135)(font "Arial" ))
+		(line (pt 256 128)(pt 240 128))
+	)
+	(port
+		(pt 256 144)
+		(output)
+		(text "data_out_async_clr" (rect 0 0 96 12)(font "Arial" ))
+		(text "data_out_async_clr" (rect 154 139 235 151)(font "Arial" ))
+		(line (pt 256 144)(pt 240 144))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "fast_ena_out" (rect 0 0 64 12)(font "Arial" ))
+		(text "fast_ena_out" (rect 181 171 235 183)(font "Arial" ))
+		(line (pt 256 176)(pt 240 176))
+	)
+	(port
+		(pt 256 160)
+		(output)
+		(text "done" (rect 0 0 23 12)(font "Arial" ))
+		(text "done" (rect 216 155 235 167)(font "Arial" ))
+		(line (pt 256 160)(pt 240 160))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 192))
+	)
+)

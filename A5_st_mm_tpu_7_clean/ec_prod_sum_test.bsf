@@ -1,0 +1,267 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 320 488)
+	(text "ec_prod_sum_test" (rect -11 -16 79 -4)(font "Arial" ))
+	(text "inst" (rect 16 400 33 412)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "clk_f" (rect 0 -16 24 -4)(font "Arial" ))
+		(text "clk_f" (rect 21 11 45 23)(font "Arial" ))
+		(line (pt 0 16)(pt 16 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "trunc_ena" (rect 0 -16 48 -4)(font "Arial" ))
+		(text "trunc_ena" (rect 21 27 69 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clear_ena" (rect 0 -16 47 -4)(font "Arial" ))
+		(text "clear_ena" (rect 21 43 68 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "digA_in_10_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "digA_in_10_[17..0]" (rect 21 203 111 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "digA_in_1_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_1_[17..0]" (rect 21 59 105 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "digA_in_2_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_2_[17..0]" (rect 21 75 105 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "digA_in_3_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_3_[17..0]" (rect 21 91 105 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "digA_in_4_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_4_[17..0]" (rect 21 107 105 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "digA_in_5_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_5_[17..0]" (rect 21 123 105 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "digA_in_6_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_6_[17..0]" (rect 21 139 105 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "digA_in_7_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_7_[17..0]" (rect 21 155 105 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "digA_in_8_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_8_[17..0]" (rect 21 171 105 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "digA_in_9_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digA_in_9_[17..0]" (rect 21 187 105 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "digB_in_10_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "digB_in_10_[17..0]" (rect 21 379 111 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "digB_in_1_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_1_[17..0]" (rect 21 235 105 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "digB_in_2_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_2_[17..0]" (rect 21 251 105 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "digB_in_3_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_3_[17..0]" (rect 21 267 105 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "digB_in_4_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_4_[17..0]" (rect 21 283 105 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "digB_in_5_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_5_[17..0]" (rect 21 299 105 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "digB_in_6_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_6_[17..0]" (rect 21 315 105 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "digB_in_7_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_7_[17..0]" (rect 21 331 105 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "digB_in_8_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_8_[17..0]" (rect 21 347 105 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "digB_in_9_[17..0]" (rect 0 -16 84 -4)(font "Arial" ))
+		(text "digB_in_9_[17..0]" (rect 21 363 105 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 3))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "data_valid_out" (rect 0 -16 71 -4)(font "Arial" ))
+		(text "data_valid_out" (rect 175 43 246 55)(font "Arial" ))
+		(line (pt 256 48)(pt 240 48))
+	)
+	(port
+		(pt 256 208)
+		(output)
+		(text "dig_sum_10_[17..0]" (rect 0 -16 96 -4)(font "Arial" ))
+		(text "dig_sum_10_[17..0]" (rect 154 203 250 215)(font "Arial" ))
+		(line (pt 256 208)(pt 240 208)(line_width 3))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "dig_sum_1_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_1_[17..0]" (rect 159 59 249 71)(font "Arial" ))
+		(line (pt 256 64)(pt 240 64)(line_width 3))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "dig_sum_2_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_2_[17..0]" (rect 159 75 249 87)(font "Arial" ))
+		(line (pt 256 80)(pt 240 80)(line_width 3))
+	)
+	(port
+		(pt 256 96)
+		(output)
+		(text "dig_sum_3_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_3_[17..0]" (rect 159 91 249 103)(font "Arial" ))
+		(line (pt 256 96)(pt 240 96)(line_width 3))
+	)
+	(port
+		(pt 256 112)
+		(output)
+		(text "dig_sum_4_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_4_[17..0]" (rect 159 107 249 119)(font "Arial" ))
+		(line (pt 256 112)(pt 240 112)(line_width 3))
+	)
+	(port
+		(pt 256 128)
+		(output)
+		(text "dig_sum_5_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_5_[17..0]" (rect 159 123 249 135)(font "Arial" ))
+		(line (pt 256 128)(pt 240 128)(line_width 3))
+	)
+	(port
+		(pt 256 144)
+		(output)
+		(text "dig_sum_6_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_6_[17..0]" (rect 159 139 249 151)(font "Arial" ))
+		(line (pt 256 144)(pt 240 144)(line_width 3))
+	)
+	(port
+		(pt 256 160)
+		(output)
+		(text "dig_sum_7_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_7_[17..0]" (rect 159 155 249 167)(font "Arial" ))
+		(line (pt 256 160)(pt 240 160)(line_width 3))
+	)
+	(port
+		(pt 256 176)
+		(output)
+		(text "dig_sum_8_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_8_[17..0]" (rect 159 171 249 183)(font "Arial" ))
+		(line (pt 256 176)(pt 240 176)(line_width 3))
+	)
+	(port
+		(pt 256 192)
+		(output)
+		(text "dig_sum_9_[17..0]" (rect 0 -16 90 -4)(font "Arial" ))
+		(text "dig_sum_9_[17..0]" (rect 159 187 249 199)(font "Arial" ))
+		(line (pt 256 192)(pt 240 192)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 0 240 400))
+	)
+)

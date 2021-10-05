@@ -1,0 +1,113 @@
+set_global_assignment -entity "mSGDMA" -library "mSGDMA" -name IP_TOOL_NAME "qsys"
+set_global_assignment -entity "mSGDMA" -library "mSGDMA" -name IP_TOOL_VERSION "12.1sp1"
+set_global_assignment -entity "mSGDMA" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -library "mSGDMA" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../mSGDMA.sopcinfo"]
+set_instance_assignment -entity "mSGDMA" -library "mSGDMA" -name SLD_INFO "QSYS_NAME mSGDMA HAS_SOPCINFO 1 GENERATION_ID 1360733219"
+set_global_assignment -library "mSGDMA" -name MISC_FILE [file join $::quartus(qip_path) "../../mSGDMA.cmp"]
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "mSGDMA" -name MISC_FILE [file join $::quartus(qip_path) "../../mSGDMA.qsys"]
+
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "mSGDMA.v"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_stage.sv"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_pipeline_base.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_handshake_clock_crosser.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_st_clock_crosser.v"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_width_adapter.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_burst_uncompressor.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_address_alignment.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_arbitrator.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_rsp_xbar_mux.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_rsp_xbar_demux.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_cmd_xbar_demux.sv"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_reset_synchronizer.v"]
+set_global_assignment -library "mSGDMA" -name SDC_FILE [file join $::quartus(qip_path) "submodules/altera_reset_controller.sdc"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_traffic_limiter.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_id_router_002.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_id_router.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_addr_router.sv"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_agent.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_agent.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_slave_translator.sv"]
+set_global_assignment -library "mSGDMA" -name SYSTEMVERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_merlin_master_translator.sv"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_timer_0.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/frequency_counter.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/status_mon.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_avalon_mm_bridge.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_timing_adapter.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/mSGDMA_timing_adapter_fifo.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/read_master.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/MM_to_ST_Adapter.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/read_burst_control.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/dispatcher.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/csr_block.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/descriptor_buffers.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/response_block.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/fifo_with_byteenables.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/read_signal_breakout.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/write_signal_breakout.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/write_master.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/byte_enable_generator.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/ST_to_MM_Adapter.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/write_burst_control.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/mtm_prbs_pattern_checker.v"]
+set_global_assignment -library "mSGDMA" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/mtm_prbs_pattern_generator.v"]
+
+set_global_assignment -entity "altera_avalon_st_pipeline_stage" -library "mSGDMA" -name IP_TOOL_NAME "altera_avalon_st_pipeline_stage"
+set_global_assignment -entity "altera_avalon_st_pipeline_stage" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_avalon_st_pipeline_stage" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "mSGDMA" -name IP_TOOL_NAME "altera_avalon_st_handshake_clock_crosser"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_avalon_st_handshake_clock_crosser" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_width_adapter"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_width_adapter" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_rsp_xbar_mux" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_multiplexer"
+set_global_assignment -entity "mSGDMA_rsp_xbar_mux" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_rsp_xbar_mux" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_rsp_xbar_demux" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "mSGDMA_rsp_xbar_demux" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_rsp_xbar_demux" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_cmd_xbar_demux" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_demultiplexer"
+set_global_assignment -entity "mSGDMA_cmd_xbar_demux" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_cmd_xbar_demux" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_reset_controller" -library "mSGDMA" -name IP_TOOL_NAME "altera_reset_controller"
+set_global_assignment -entity "altera_reset_controller" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_reset_controller" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_traffic_limiter"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_traffic_limiter" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_id_router_002" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "mSGDMA_id_router_002" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_id_router_002" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_id_router" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "mSGDMA_id_router" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_id_router" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_addr_router" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_router"
+set_global_assignment -entity "mSGDMA_addr_router" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_addr_router" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "mSGDMA" -name IP_TOOL_NAME "altera_avalon_sc_fifo"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_avalon_sc_fifo" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_slave_agent"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_slave_agent" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_master_agent" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_master_agent"
+set_global_assignment -entity "altera_merlin_master_agent" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_master_agent" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_slave_translator"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_slave_translator" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_merlin_master_translator" -library "mSGDMA" -name IP_TOOL_NAME "altera_merlin_master_translator"
+set_global_assignment -entity "altera_merlin_master_translator" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_merlin_master_translator" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_timer_0" -library "mSGDMA" -name IP_TOOL_NAME "altera_avalon_timer"
+set_global_assignment -entity "mSGDMA_timer_0" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_timer_0" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "mSGDMA" -name IP_TOOL_NAME "altera_avalon_mm_bridge"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "altera_avalon_mm_bridge" -library "mSGDMA" -name IP_TOOL_ENV "qsys"
+set_global_assignment -entity "mSGDMA_timing_adapter" -library "mSGDMA" -name IP_TOOL_NAME "timing_adapter"
+set_global_assignment -entity "mSGDMA_timing_adapter" -library "mSGDMA" -name IP_TOOL_VERSION "12.1"
+set_global_assignment -entity "mSGDMA_timing_adapter" -library "mSGDMA" -name IP_TOOL_ENV "qsys"

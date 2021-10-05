@@ -1,0 +1,91 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 448 232 736 400)
+	(text "altclkcntrl_1" (rect 110 -1 192 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 152 25 164)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "inclk3x" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclk3x" (rect 4 61 42 75)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "inclk2x" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclk2x" (rect 4 77 42 91)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 96 88))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "inclk1x" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclk1x" (rect 4 93 42 107)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 96 104))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "inclk0x" (rect 0 0 38 14)(font "Arial" (font_size 8)))
+		(text "inclk0x" (rect 4 109 42 123)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 96 120))
+	)
+	(port
+		(pt 0 136)
+		(input)
+		(text "clkselect[1..0]" (rect 0 0 77 14)(font "Arial" (font_size 8)))
+		(text "clkselect[1..0]" (rect 4 125 81 139)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 96 136)(line_width 3))
+	)
+	(port
+		(pt 288 72)
+		(output)
+		(text "outclk" (rect 0 0 33 14)(font "Arial" (font_size 8)))
+		(text "outclk" (rect 258 61 291 75)(font "Arial" (font_size 8)))
+		(line (pt 288 72)(pt 176 72))
+	)
+	(drawing
+		(text "altclkctrl_input" (rect 13 43 105 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "inclk3x" (rect 101 67 135 79)(font "Arial" (color 0 0 0)))
+		(text "inclk2x" (rect 101 83 135 95)(font "Arial" (color 0 0 0)))
+		(text "inclk1x" (rect 101 99 135 111)(font "Arial" (color 0 0 0)))
+		(text "inclk0x" (rect 101 115 135 127)(font "Arial" (color 0 0 0)))
+		(text "clkselect" (rect 101 131 144 143)(font "Arial" (color 0 0 0)))
+		(text "altclkctrl_output" (rect 177 43 277 58)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "outclk" (rect 148 67 177 79)(font "Arial" (color 0 0 0)))
+		(text " altclkcntrl_1 " (rect 234 152 300 164)(font "Arial" ))
+		(line (pt 96 32)(pt 176 32))
+		(line (pt 176 32)(pt 176 152))
+		(line (pt 96 152)(pt 176 152))
+		(line (pt 96 32)(pt 96 152))
+		(line (pt 97 52)(pt 97 140))
+		(line (pt 98 52)(pt 98 140))
+		(line (pt 175 52)(pt 175 76))
+		(line (pt 174 52)(pt 174 76))
+		(line (pt 0 0)(pt 288 0))
+		(line (pt 288 0)(pt 288 168))
+		(line (pt 0 168)(pt 288 168))
+		(line (pt 0 0)(pt 0 168))
+	)
+)

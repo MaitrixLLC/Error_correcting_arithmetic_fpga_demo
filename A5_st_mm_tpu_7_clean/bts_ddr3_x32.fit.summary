@@ -1,0 +1,20 @@
+Fitter Status : Successful - Sun Sep 19 09:07:47 2021
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : bts_ddr3_x32
+Top-level Entity Name : Nios_ddr3_ver1
+Family : Arria V
+Device : 5AGXFB3H4F35C5
+Timing Models : Final
+Logic utilization (in ALMs) : 40,566 / 136,880 ( 30 % )
+Total registers : 96612
+Total pins : 16 / 656 ( 2 % )
+Total virtual pins : 0
+Total block memory bits : 2,065,584 / 17,674,240 ( 12 % )
+Total RAM Blocks : 312 / 1,726 ( 18 % )
+Total DSP Blocks : 24 / 1,045 ( 2 % )
+Total HSSI RX PCSs : 0 / 24 ( 0 % )
+Total HSSI PMA RX Deserializers : 0 / 24 ( 0 % )
+Total HSSI TX PCSs : 0 / 24 ( 0 % )
+Total HSSI PMA TX Serializers : 0 / 24 ( 0 % )
+Total PLLs : 3 / 36 ( 8 % )
+Total DLLs : 0 / 4 ( 0 % )
